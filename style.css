@@ -1,7 +1,7 @@
 body {
     margin:0;
     padding:0;
-    background-color: #efeee7;
+    background: #efeee7;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     color: #333333;
     line-height: 150%;
@@ -10,10 +10,12 @@ body {
 
 header {
     background-color: #333;
-    padding: 15px;
 }
 
 h1 {
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 20px;
     color: #eee;
     font-size: 28px;
     text-align: center;
@@ -49,5 +51,6 @@ a {
 
 #bio-image {
     width: 200px;
-    margin-right: 10px;
+    height: 200px;
+    margin-right: 20px;
 }
