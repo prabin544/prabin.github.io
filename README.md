@@ -1,5 +1,2 @@
-# CSS-Bootstrap-HW
-# This repo is created for 2nd assignment of SMU Bootcamp
-# A simple website has been created using Bootstrap code snippet and few additional custom css and HTML file.
-# A simple animation effect has been given using animate.css.
-# This website can be accessed at: https://prabin544.github.io/CSS-Bootstrap/
+Hello This is my First website. I am working on this project and will continue to add feature as I progress in my class. 
+Meanwhile, please feel free to access the website 
