@@ -1,0 +1,157 @@
+.container {
+    width: 1024px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container h2{
+    padding-left: 40px;
+    color: red;
+}
+
+#header p {
+    color: orange;
+    font-size: 30px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.img-wrapper {
+    position: relative;
+   }
+  
+.img-responsive {
+    width: 12rem;
+    height: 180px;
+    margin: 10px;  
+}
+  
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+ }
+  
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    height: 65%;
+    
+}
+.flickity img {
+    height: 280px;
+    width: 400px;
+    margin-left: 20px;
+}
+.row, p{
+    padding-left: 40px;
+    color: red;
+    z-index: 1;  
+}
+.cocktailSlideShow img {
+    width: auto;
+    height: 445px;
+    max-height: 445px;
+    margin: auto; 
+    display: block;
+    bottom: 0;
+    text-align: auto;
+
+}
+.cocktailSlideShow table {
+    border: red;
+}
+.cocktailSlideShow .names{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::before {
+    content: "";
+    background-image: url(../images/qcocktail.jpg);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+.flickity{
+    padding-top: 30px;
+}
+
+.modal-backdrop {
+    opacity: 0.95 !important;
+    border-radius: 20px;
+  }
+
+.modal-body {
+position: relative;
+-webkit-box-flex: 1;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+padding: 5rem;
+background: rgb(116, 3, 3);
+text-align: center;
+border-radius: 20px;
+}
+
+#ageModal.btn {
+border-radius: 0 !important;
+color: #c8b328;
+border: 1px solid #c8b328 !important;
+padding: .5rem 3rem !important;
+}
+
+#ageModal.btn:hover {
+background: #c8b328;
+color:  blue;
+border: 2px solid #fff !important;
+padding: .5rem 3rem !important;
+}
+@media (max-width:768px) {
+.mobile-margin-bottom{
+    margin-bottom:.5rem;
+}
+
+}
+#ageModal img{
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+}
+#age-submit {
+    border: #C8B328 solid;
+    border-radius: 10px;
+}
+.hidden-xs {
+    padding-top: 20px;
+}
+.img-wrapper img{
+    border-radius: 27px;
+}
+
+.hidden-xx {
+    padding: 0px;
+    color: white;
+    font-style: italic;
+}
+#font{
+    padding-left: 20px;
+}
+.homeBtn{
+    padding-right: 30px;
+}

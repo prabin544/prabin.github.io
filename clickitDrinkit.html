@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match It - Make It</title>
+    <!--link to css-->
+    <link rel="stylesheet" href="Assets/css/cocktailStyle.css">
+    <!--link to bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"  crossorigin="anonymous" />
+</head>
+
+
+<!--end of header-->
+
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+        
+        <span id="header" class=" navbar-brand mb-0 h1 animate__animated animate__zoomIn">
+            <a class="homeBtn" href="#">
+            <i id="font" class="fa fa-home icon-2x" aria-hidden="true"></i></a>
+            Click It - Drink It
+        </span>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" id="cocktail" placeholder="Search by cocktail name!"
+                aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="button" id="searchBtn">Search</button>
+        </form>
+    </nav>
+  </header>
+
+    <!-- Age Verification -->
+
+
+    <div class="modal fade" id="ageModal" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static"
+    data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <img src="./Assets/images/user1.png">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12" id="modal-age-limit" style="margin-bottom: 2.5rem;
+            color: #fff;">
+              <h3 class="hidden-xs"><strong>MUST BE 21 TO ENTER</strong></h3>
+              <p class="hidden-xx" id="notTwentyOne"><strong></strong></p>
+            </div>
+            <div class="col-xs-4 col-sm-4 mobile-margin-bottom">
+              <select name="month" class="form-control" id="verify-month">
+                <option value="none">Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+            <div class="col-xs-4 col-sm-4 mobile-margin-bottom">
+              <select name="day" class="form-control" id="verify-day">
+                <option value="none">Day</option>
+              </select>
+            </div>
+            <div class="col-xs-4 col-sm-4">
+              <select name="Year" class="form-control" id="verify-year">
+                <option value="none">Year</option>
+              </select>
+            </div>
+            <div class="col-xs-12 col-lg-12" id="age-submit-area" style="margin-top: 2rem;
+            color: #fff;">
+              <a href="#" class="btn btn-default" id="age-submit" style="color: white;">SUBMIT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+    <div class="container">
+        <div id="home">
+            <p class="animate__animated animate__slideInLeft">Welcome to Click It - Drink It where you can learn fun new
+                drink ideas! Get started by selecting a cocktail type.</p>
+            <h2 class="animate__animated animate__bounce">Pick a cocktail type</h2>
+            <!--start of row 1-->
+            <div class="row">
+                <!--Moscow Mule-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/moscowmule.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="Moscow Mule" class="btn btn-outline-light buttonClass">Moscow Mule</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+
+
+                <!--Margarita-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/margarita.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="Margarita" class="btn btn-outline-light buttonClass">Margarita</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+
+                <!--Whiskey Sour-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/whiskeysour.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="Whiskey Sour" class="btn btn-outline-light buttonClass">Whiskey Sour</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+
+                <!---Daiquiri-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/daiquiri.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="Daiquiri" class="btn btn-outline-light buttonClass">Daiquiri</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+
+                <!--Manhattan-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/manhattan.jpeg">
+                        <div class="img-overlay">
+                            <a href="#" id="Manhattan" class="btn btn-outline-light buttonClass">Manhattan</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+            </div>
+            <!--end of row 1-->
+
+            <!--start of row 2-->
+            <div class="row">
+                <!--Old Fashioned-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/oldfashioned.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="Old Fashioned" class="btn btn-outline-light buttonClass">Old Fashioned</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+
+                <!--Cosmopolitan-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/cosmopolitan.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="Cosmopolitan" class="btn btn-outline-light buttonClass">Cosmopolitan</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+
+                <!--Mojito-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/mojito.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="Mojito" class="btn btn-outline-light buttonClass">Mojito</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+
+                <!---Sidecar-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/sidecar.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="Sidecar" class="btn btn-outline-light buttonClass">Sidecar</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+
+                <!--White Russian-->
+                <div class="col-m-2">
+                    <div class="img-wrapper">
+                        <img class="img-responsive" src="Assets/images/white russian.jpg">
+                        <div class="img-overlay">
+                            <a href="#" id="White Russian" class="btn btn-outline-light buttonClass">White Russian</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of column-->
+            </div>
+            <!--end of row 1-->
+            <div class="flickity" data-flickity='{"wrapAround": true, "freeScroll": true, "autoPlay": true}'>
+                <div class="carousel-cell">
+                    <img src="./Assets/images/brandy.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./Assets/images/Whiskey1.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./Assets/images/Whiskey2.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./Assets/images/gin.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./Assets/images/whiskey.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./Assets/images/whiskey3.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./Assets/images/whiskey4.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./Assets/images/rum.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="cocktailSlideShow">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner"></div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!--end of container-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./Develop/cocktail.js"></script>
+</body>
+
+</html>
