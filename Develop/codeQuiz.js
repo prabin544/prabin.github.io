@@ -132,6 +132,6 @@ function highScores(e){
 }
 function reset(e){
 
-  location.href = "./index.html";
+  location.href = "../codeQuiz.js";
 }
 startquiz.addEventListener('click', buildQuiz);
