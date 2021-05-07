@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    width: 900px;
+    margin: auto;
+}
+
+header {
+margin-top: 40px;
+}
+
+#socialMedia img {
+/* height: 12px;
+width: 12px; */
+float: right;
+margin-left: 1px;
+margin-top: 10px;
+}
+
+#socialMedia :nth-child(2) {
+    margin-left: 10px;
+    margin-top: 10px;
+    }
+
+#header-logo {
+display: inline-block;
+}
+
+#header-logo img {
+float: left;
+}
+
+.delicious {
+font-family: 'Playball', cursive;
+font-size: 210%;
+display: inline-block;
+margin-left: 10px;
+}
+
+.subhead {
+font-family: 'Nunito', sans-serif;
+font-size: 50%;
+color: grey;
+min-width: 400px;
+margin-left: 50px;
+}
+
+#divider {
+
+background-repeat: repeat-x;
+width: 960px;
+}
+
+h1 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 250%;
+}
+
+h3 {
+font-family: 'Nunito', sans-serif;
+font-size: 60%;
+color: rgb(158, 164, 170);
+}
+
+h4 {
+    font-size: 100%;
+    font-weight: bolder;
+    }
+
+#print>h3, #print>img {
+display: inline;
+float: right;
+margin-bottom: 30px;
+margin-left: 4px;
+height: 10px;
+}
+
+#title {
+margin-top: 40px;
+position: relative;
+top: 20px;
+}
+
+#recipe {
+font-family: ‘Pangolin’, cursive;
+}
+
+ul li {
+list-style-type: square;
+}
+
+#recipe {
+    position: relative;
+    margin: auto;
+}
+
+#recipe>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#firstCol{
+    position: relative;
+    max-height: 240px;
+    display: inline-block;
+    margin: 40px 10px;
+    padding-left: 150px;
+}
+
+#secondCol{
+    position: relative;
+    max-height: 240px;
+    display: inline-block;
+    margin: 40px 10px;
+}
+
+.list {
+margin: 0;
+padding: 0;
+z-index: 10px;
+line-height:143%;
+}
+
+.list>li {
+background-size:contain;
+margin: 0;
+padding: 4px 0 4px 20px;
+list-style: none;
+}
+
+.author {
+position: relative;
+top: 75px;
+display: inline;
+}
+
+.author>img {
+float: left;
+}
+
+.author>button {
+float: right;
+background-color: brown;
+}
+
+/* footer>img {
+margin-left: 430px;
+position: relative;
+top: 75px;
+} */
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+
+*:checked + li { background:orange; }
+input[type="checkbox"] {
+    display: inline-block
+}
+#shareBtn{
+    background-color: orange;
+    font-size: 20px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 200px;
+    opacity: 0.5;
+}
+p.a {
+text-indent: 20px;
+padding: 20px;
+}
